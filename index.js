@@ -1,10 +1,11 @@
 const express = require('express'); // importing express
-const port = 3000;
-
+const port = 3000; 
+const db = require('./config/mongoose') // importing mongoose file
 const app = express(); // using express
 app.use(express.urlencoded());
 
-
+// routing action
+app.use('/',require('./routers/index'))
 
 
 // listening to server
