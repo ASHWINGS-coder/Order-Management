@@ -7,12 +7,10 @@ const orderSchema = new mongoose.Schema({
         required:true
     },
     qty:{
-        type:Number,
+        type:String,
         required:true
     }
-},{
-    timestamps:true
-})
+});
 
 const Order = mongoose.model('Order',orderSchema);
 
